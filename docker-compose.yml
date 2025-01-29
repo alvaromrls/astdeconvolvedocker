@@ -1,0 +1,8 @@
+services:
+  dev_environment:
+    image: gnuastro-deconvolution # Nombre de la imagen que acabamos de crear
+    volumes:
+      - ./files:/workspace/files
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
